@@ -17,12 +17,40 @@ This is a bash script built to speed up the deployment for a Bootstrap 3 sub the
 The project has been developed to help a friend with their needs but is open for all to enjoy and contribute to.
 Please feel free to raise an issue if you have any ideas to improve the AutoSubtheme script.
 
+### Prerequisites
+
+##### Drupal
+Please ensure that you are running the latest stable version of [Drupal 8](https://www.drupal.org/project/drupal/releases)
+```
+drupal 8.8.2
+```
+
+##### wget
+Please ensure that you are running a version of [wget](https://www.gnu.org/software/wget/) 1.20.3 or higher
+```
+wget -V
+GNU Wget 1.20.3
+```
+
+##### Installing wget
+
+Please use the following commands below to install wget depending on your OS of choice.
+MacOs install wget
+```
+brew install wget
+```
+Linux install wget
+```
+apt-get install wget
+```
+
 ### Bootstrap Version
 
 The current version of this script is using ```https://ftp.drupal.org/files/projects/bootstrap-8.x-3.21.tar.gz``` for its Bootstrap 3 version.
 
 # Authors
  - Andrew De Torres - [@andrewdetorres](https://github.com/andrewdetorres).
+
 See also the list of [contributors](https://github.com/andrewdetorres/autoSubtheme/graphs/contributors) who participated in this project.
 
 # License
