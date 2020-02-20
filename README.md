@@ -3,53 +3,70 @@
 
 <p align="center">
   <a href="https://www.npmjs.com/d8b3" target="_blank">
-    <img src="https://img.shields.io/npm/v/@d8b3/core.svg" alt="NPM Version" />
+    <img src="https://img.shields.io/npm/v/d8b3?style=for-the-badge" alt="NPM Version" />
   </a>
   <a href="https://www.npmjs.com/d8b3" target="_blank">
-    <img src="https://img.shields.io/npm/l/@d8b3/core.svg" alt="Package License" />
+    <img src="https://img.shields.io/npm/l/d8b3?style=for-the-badge" alt="Package License" />
   </a>
   <a href="https://www.npmjs.com/d8b3" target="_blank">
-    <img src="https://img.shields.io/npm/dm/@d8b3/common.svg" alt="NPM Downloads" />
+    <img src="https://img.shields.io/npm/dm/d8b3?style=for-the-badge" alt="NPM Downloads" />
   </a>
 </p>
 
-This is a bash script built to speed up the deployment for a Bootstrap 3 sub theme deployment on a Drupal 8 instance.
+<p align="center">
+  <a href="https://github.com/andrewdetorres/d8b3" target="_blank">
+    <img src="https://img.shields.io/github/last-commit/andrewdetorres/d8b3?style=for-the-badge" alt="Last Commit" />
+  </a>
+  <a href="https://www.npmjs.com/d8b3" target="_blank">
+    <img src="https://img.shields.io/npm/collaborators/d8b3?style=for-the-badge" alt="Package Collaborators" />
+  </a>
+</p>
+
+This is a bash script built to speed up the deployment for a Bootstrap 3 sub-theme deployment on a Drupal 8 instance.
 The project has been developed to help a friend with their needs but is open for all to enjoy and contribute to.
 Please feel free to raise an issue if you have any ideas to improve the AutoSubtheme script.
 
 # d8b3 Usage
 
-
 ##### Installation
-Install d8b3 as a globally using the follloing command
+Install d8b3 as globally using the following command:
 ```
 npm install -g d8b3
 ```
 
 ##### Usage
-Navigate to the root of your drupal 8 site (e.g /var/www/html/[sitename]/drupal).
+Navigate to the root of your drupal 8 site (e.g /var/www/html/[sitename]/drupal) and run the following command:
 ```
 d8b3
 ```
 
-### Prerequisites
+Answer the series of questions and your sub-theme will be created.
+
+# File Structure
+On successfull execution of the d8b3 command. You should have the following file structure.
+
+```
+web
+└───themes
+│   │   
+│   └───contrib
+│   │   └───bootstrap
+│   └───custom
+│       └───d8b3_bootstrap_subtheme
+```
+
+# Prerequisites
 
 ##### Drupal
 Please ensure that you are running the latest stable version of [Drupal 8](https://www.drupal.org/project/drupal/releases)
-```
-drupal 8.8.2
-```
 
 ##### wget
 Please ensure that you are running a version of [wget](https://www.gnu.org/software/wget/) 1.20.3 or higher
-```
-wget -V
-GNU Wget 1.20.3
-```
 
 ##### Installing wget
 
 Please use the following commands below to install wget depending on your OS of choice.
+
 MacOs install wget
 ```
 brew install wget
