@@ -50,6 +50,9 @@ buildStarterkit() {
 # Themes Directory.
 SUBTHEME_TITLE=default_bootstrap_subtheme;
 
+# Sed lang to treat all ASCII characters as themselves
+LANG=C
+
 read -r -p "Please Enter your subtheme name: " SUBTHEME_TITLE;
 echo;
 
