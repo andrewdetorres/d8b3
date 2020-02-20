@@ -1,17 +1,16 @@
 {
   "name": "d8b3",
-  "version": "1.0.0",
+  "version": "1.0.6",
   "description": "Used to deploy a bootstrap 3 subtheme to drupal 8 site",
-  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "bin": {
-    "d8b3": "./test.sh"
+    "d8b3": "./d8b3.sh"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/andrewdetorres/autoSubtheme.git"
+    "url": "git+https://github.com/andrewdetorres/d8b3.git"
   },
   "keywords": [
     "drupal8",
@@ -20,7 +19,7 @@
   "author": "Andrew De Torres",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/andrewdetorres/autoSubtheme/issues"
+    "url": "https://github.com/andrewdetorres/d8b3/issues"
   },
-  "homepage": "https://github.com/andrewdetorres/autoSubtheme#readme"
+  "homepage": "https://github.com/andrewdetorres/d8b3#readme"
 }
