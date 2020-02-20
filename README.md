@@ -17,6 +17,21 @@ This is a bash script built to speed up the deployment for a Bootstrap 3 sub the
 The project has been developed to help a friend with their needs but is open for all to enjoy and contribute to.
 Please feel free to raise an issue if you have any ideas to improve the AutoSubtheme script.
 
+# d8b3 Usage
+
+
+##### Installation
+Install d8b3 as a globally using the follloing command
+```
+npm install -g d8b3
+```
+
+##### Usage
+Navigate to the root of your drupal 8 site (e.g /var/www/html/[sitename]/drupal).
+```
+d8b3
+```
+
 ### Prerequisites
 
 ##### Drupal
@@ -40,17 +55,6 @@ MacOs install wget
 brew install wget
 ```
 Linux install wget
-```
-apt-get install wget
-```
-
-##### d8b3 Usage
-
-Install d8b3 as a globally using the follloing command
-```
-npm install -g d8b3
-```
-Navigate to the root of your drupal 8 site (e.g /var/www/html/[sitename]/drupal).
 ```
 apt-get install wget
 ```
