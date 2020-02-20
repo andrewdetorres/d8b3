@@ -44,6 +44,17 @@ Linux install wget
 apt-get install wget
 ```
 
+##### d8b3 Usage
+
+Install d8b3 as a globally using the follloing command
+```
+npm install -g d8b3
+```
+Navigate to the root of your drupal 8 site (e.g /var/www/html/[sitename]/drupal).
+```
+apt-get install wget
+```
+
 ### Bootstrap Version
 
 The current version of this script is using ```https://ftp.drupal.org/files/projects/bootstrap-8.x-3.21.tar.gz``` for its Bootstrap 3 version.
