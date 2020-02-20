@@ -5,10 +5,10 @@
   <a href="https://www.npmjs.com/d8b3" target="_blank">
     <img src="https://img.shields.io/npm/v/@d8b3/core.svg" alt="NPM Version" />
   </a>
-  <a href="https://www.npmjs.com/~d8b3" target="_blank">
+  <a href="https://www.npmjs.com/d8b3" target="_blank">
     <img src="https://img.shields.io/npm/l/@d8b3/core.svg" alt="Package License" />
   </a>
-  <a href="https://www.npmjs.com/~d8b3" target="_blank">
+  <a href="https://www.npmjs.com/d8b3" target="_blank">
     <img src="https://img.shields.io/npm/dm/@d8b3/common.svg" alt="NPM Downloads" />
   </a>
 </p>
@@ -22,7 +22,7 @@ Please feel free to raise an issue if you have any ideas to improve the AutoSubt
 The current version of this script is using ```https://ftp.drupal.org/files/projects/bootstrap-8.x-3.21.tar.gz``` for its Bootstrap 3 version.
 
 # Authors
- - Andrew De Torres - [@andrewdetorres](https://github.com/andrewdetorres)
+ - Andrew De Torres - [@andrewdetorres](https://github.com/andrewdetorres).
 See also the list of [contributors](https://github.com/andrewdetorres/autoSubtheme/graphs/contributors) who participated in this project.
 
 # License

@@ -42,13 +42,13 @@ buildStarterkit() {
   mv $SUBTHEME/THEMENAME.theme $SUBTHEME/$SUBTHEME_TITLE.theme;
   mv $SUBTHEME/config/schema/THEMENAME.schema.yml $SUBTHEME/config/schema/$SUBTHEME_TITLE.schema.yml;
   cd $SUBTHEME;
-  find ./ -type f -exec sed -i -e "s/THEMETITLE/$SUBTHEME_TITLE/g" {} \;
-  find ./ -type f -exec sed -i -e "s/THEMENAME/$SUBTHEME_TITLE/g" {} \;
+  find ./ -type f -exec sed -i '' -e "s/THEMETITLE/$SUBTHEME_TITLE/g" {} \;
+  find ./ -type f -exec sed -i '' -e "s/THEMENAME/$SUBTHEME_TITLE/g" {} \;
   cd ../../../..;
 }
 
 # Themes Directory.
-SUBTHEME_TITLE=defulat_bootstrap_subtheme;
+SUBTHEME_TITLE=default_bootstrap_subtheme;
 
 read -r -p "Please Enter your subtheme name: " SUBTHEME_TITLE;
 echo;
