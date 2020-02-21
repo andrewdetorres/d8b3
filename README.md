@@ -18,7 +18,7 @@
     <img src="https://img.shields.io/github/last-commit/andrewdetorres/d8b3?style=for-the-badge" alt="Last Commit" />
   </a>
   <a href="https://www.npmjs.com/d8b3" target="_blank">
-    <img src="https://img.shields.io/github/contributors/andrewdetorres/d8b3" alt="Github Contributors" />
+    <img src="https://img.shields.io/github/contributors/andrewdetorres/d8b3?style=for-the-badge" alt="Github Contributors" />
   </a>
 </p>
 
