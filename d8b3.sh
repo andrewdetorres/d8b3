@@ -36,9 +36,9 @@ doesExist() {
     if ! [ -x "$(command -v $1)" ]; then
         # Parameter 2 is an optional dependency
         if [ "$2" = true ]; then
-            echo "${RED}WARNING${NC}" >&2
+            printf "${RED}WARNING${NC}\n"
         else
-            echo "${RED}FAIL${NC}" >&2
+            printf "${RED}FAIL${NC}\n"
             didError=true
         fi
         return 0
@@ -92,7 +92,7 @@ buildStarterkit() {
 printf "\n${NC}Checking prerequisites...\n"
 doesExist 'wget'
 if [ "$didError" = true ]; then
-    printf "${NC}Error:\n${RED}- Please make sure to install the above failed requirements.{$NC}\n\n"
+    printf "${NC}Error:\n${RED}- Please make sure to install the above failed requirements.${NC}\n\n"
     exit 1
 else
     printf "${GR}Requirements fulfilled!${NC}\n\n"
