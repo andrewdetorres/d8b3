@@ -48,7 +48,7 @@ On successfull execution of the d8b3 command. You should have the following file
 ```
 web
 └───themes
-│   │   
+│   │
 │   └───contrib
 │   │   └───bootstrap
 │   └───custom
@@ -82,6 +82,11 @@ The current version of this script is using ```https://ftp.drupal.org/files/proj
 
 # Authors
  - Andrew De Torres - [@andrewdetorres](https://github.com/andrewdetorres).
+
+# Contributors
+
+Thanks to the following contributors for their support.
+ - Reece Benson - [@reecebenson](https://github.com/reecebenson).
 
 See also the list of [contributors](https://github.com/andrewdetorres/autoSubtheme/graphs/contributors) who participated in this project.
 
