@@ -30,6 +30,24 @@ printf "${NC}
 /////////////////////////////////////////////////////////////////////////
 "
 
+didError=false
+doesExist() {
+    printf "> $1..."
+    if ! [ -x "$(command -v $1)" ]; then
+        # Parameter 2 is an optional dependency
+        if [ "$2" = true ]; then
+            echo "WARNING" >&2
+        else
+            echo "FAIL" >&2
+            didError=true
+        fi
+        return 0
+    else
+        echo "OK"
+        return 1
+    fi
+}
+
 unpackBootstrap() {
 
   # Download Bootstrap 3 for Drupal 8
@@ -83,6 +101,15 @@ buildStarterkit() {
   find ./ -type f -exec sed -i '' -e "s/THEMENAME/$SUBTHEME_TITLE/g" {} \;
   cd ../../../..;
 }
+
+# Prerequisites check for wget
+doesExist 'wget'
+if [ "$didError" = true ]; then
+    printf "\nError:\n- Please make sure to install the above failed requirements.\n\n"
+    exit 1
+else
+    printf "\nRequirements fulfilled!\n\n"
+fi
 
 # Themes Directory.
 SUBTHEME_TITLE=d8b3_default_bootstrap_subtheme;
