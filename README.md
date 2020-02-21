@@ -18,7 +18,7 @@
     <img src="https://img.shields.io/github/last-commit/andrewdetorres/d8b3?style=for-the-badge" alt="Last Commit" />
   </a>
   <a href="https://www.npmjs.com/d8b3" target="_blank">
-    <img src="https://img.shields.io/npm/collaborators/d8b3?style=for-the-badge" alt="Package Collaborators" />
+    <img src="https://img.shields.io/github/contributors/andrewdetorres/d8b3" alt="Github Contributors" />
   </a>
 </p>
 
@@ -88,7 +88,7 @@ The current version of this script is using ```https://ftp.drupal.org/files/proj
 Thanks to the following contributors for their support.
  - Reece Benson - [@reecebenson](https://github.com/reecebenson).
 
-See also the list of [contributors](https://github.com/andrewdetorres/autoSubtheme/graphs/contributors) who participated in this project.
+See also the list of [contributors](https://github.com/andrewdetorres/d8b3/graphs/contributors) who participated in this project.
 
 # License
 This project is licensed under the MIT License - see the [LICENSE.md](https://github.com/andrewdetorres/d8b3/blob/master/LICENSE.md) file for details
