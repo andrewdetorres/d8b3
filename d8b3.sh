@@ -43,7 +43,7 @@ doesExist() {
         fi
         return 0
     else
-        echo "${GR}OK${NC}"
+        printf "${GR}OK${NC}\n"
         return 1
     fi
 }
