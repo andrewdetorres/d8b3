@@ -30,23 +30,27 @@ printf "${NC}
 /////////////////////////////////////////////////////////////////////////
 "
 
-unpackBootstrap() {
+didError=false
+doesExist() {
+    printf "> $1..."
+    if ! [ -x "$(command -v $1)" ]; then
+        # Parameter 2 is an optional dependency
+        if [ "$2" = true ]; then
+            printf "${RED}WARNING${NC}\n"
+        else
+            printf "${RED}FAIL${NC}\n"
+            didError=true
+        fi
+        return 0
+    else
+        printf "${GR}OK${NC}\n"
+        return 1
+    fi
+}
 
+unpackBootstrap() {
   # Download Bootstrap 3 for Drupal 8
   wget https://ftp.drupal.org/files/projects/bootstrap-8.x-3.21.tar.gz;
-
-  # Check to see if command was successful
-  if [ $? -eq 0 ]; then
-    printf "${GR}wget actioned successfully${NC}\n\n"
-  else
-    printf "${RED}wget command not executed by d8b3, please use the following to install wget\n\n${NC}"
-    printf "For MacOS please run:\n\n";
-    printf "    brew install wget\n\n";
-    printf "For Linux please run:\n\n";
-    printf "    apt-get install wget\n\n";
-    printf "Alternatively, please visit ${GR}https://npmjs.com/package/d8b3${NC} for more information.\n\n";
-    exit 1;
-  fi
 
   # Extract file and remove tar.gz
   tar -xvzf bootstrap-8.x-3.21.tar.gz;
@@ -56,9 +60,9 @@ unpackBootstrap() {
 # Used to check if a file has been successfully renamed
 fileMoveSuccess() {
   if [ -f "$1" ]; then
-    printf "${GR}File move $1 successfull${NC}\n";
+    printf "${GR}File move $1 successful${NC}\n";
   else
-    printf "${RED}File move unsuccessfull${NC}\n";
+    printf "${RED}File move unsuccessful${NC}\n";
     exit 1;
   fi
 }
@@ -83,6 +87,16 @@ buildStarterkit() {
   find ./ -type f -exec sed -i '' -e "s/THEMENAME/$SUBTHEME_TITLE/g" {} \;
   cd ../../../..;
 }
+
+# Prerequisites check for wget
+printf "\n${NC}Checking prerequisites...\n"
+doesExist 'wget'
+if [ "$didError" = true ]; then
+    printf "${NC}Error:\n${RED}- Please make sure to install the above failed requirements.${NC}\n\n"
+    exit 1
+else
+    printf "${GR}Requirements fulfilled!${NC}\n\n"
+fi
 
 # Themes Directory.
 SUBTHEME_TITLE=d8b3_default_bootstrap_subtheme;
