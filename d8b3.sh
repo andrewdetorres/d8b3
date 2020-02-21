@@ -36,14 +36,14 @@ doesExist() {
     if ! [ -x "$(command -v $1)" ]; then
         # Parameter 2 is an optional dependency
         if [ "$2" = true ]; then
-            echo "WARNING" >&2
+            echo "${RED}WARNING${NC}" >&2
         else
-            echo "FAIL" >&2
+            echo "${RED}FAIL${NC}" >&2
             didError=true
         fi
         return 0
     else
-        echo "OK"
+        echo "${GR}OK${NC}"
         return 1
     fi
 }
@@ -74,9 +74,9 @@ unpackBootstrap() {
 # Used to check if a file has been successfully renamed
 fileMoveSuccess() {
   if [ -f "$1" ]; then
-    printf "${GR}File move $1 successfull${NC}\n";
+    printf "${GR}File move $1 successful${NC}\n";
   else
-    printf "${RED}File move unsuccessfull${NC}\n";
+    printf "${RED}File move unsuccessful${NC}\n";
     exit 1;
   fi
 }
@@ -105,10 +105,10 @@ buildStarterkit() {
 # Prerequisites check for wget
 doesExist 'wget'
 if [ "$didError" = true ]; then
-    printf "\nError:\n- Please make sure to install the above failed requirements.\n\n"
+    printf "\n${NC}Error:\n${RED}- Please make sure to install the above failed requirements.{$NC}\n\n"
     exit 1
 else
-    printf "\nRequirements fulfilled!\n\n"
+    printf "\n${GR}Requirements fulfilled!${NC}\n\n"
 fi
 
 # Themes Directory.
