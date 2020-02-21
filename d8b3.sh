@@ -103,6 +103,7 @@ buildStarterkit() {
 }
 
 # Prerequisites check for wget
+printf "\n${NC}Checking prerequisites..."
 doesExist 'wget'
 if [ "$didError" = true ]; then
     printf "\n${NC}Error:\n${RED}- Please make sure to install the above failed requirements.{$NC}\n\n"
