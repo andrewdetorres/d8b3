@@ -1,3 +1,8 @@
+<p align="center">
+  <a aria-label="d8b3 Logo" href="https://npmjs.com">
+    <img src="https://andrewdetorres.com/images/d8b3_color.png" width="250px">
+  </a>
+</p>
 <h1 align="center">d8b3</h1>
 <p align="center">An <a href="http://npmjs.org" target="_blank">NPM</a> package used to auto deploy a Bootstrap 3 Sub-theme to a Drupal 8 site.</p>
 

@@ -1,6 +1,6 @@
 {
   "name": "d8b3",
-  "version": "1.0.8",
+  "version": "1.0.9",
   "description": "Used to deploy a bootstrap 3 subtheme to drupal 8 site",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
